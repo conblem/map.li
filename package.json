@@ -48,5 +48,8 @@
       "@babel/proposal-object-rest-spread",
       "react-hot-loader/babel"
     ]
+  },
+  "dependencies": {
+    "firebase": "^5.8.3"
   }
 }
