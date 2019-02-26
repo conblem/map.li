@@ -10,11 +10,17 @@ const isDev: boolean = process.env.NODE_ENV === "development";
 
 const config: Configuration = {
   mode: isDev ? "development" : "production",
-  entry: "./src/index.js",
+  entry: "./src/index.tsx",
   output: {
     path: join(__dirname, "..", "dist"),
     publicPath: "/",
     filename: "bundle.js"
+  },
+  resolve: {
+    alias: {
+      preact: "react"
+    },
+    extensions: [".js", ".jsx", ".ts", ".tsx"]
   },
   module: {
     rules: [

@@ -3,6 +3,7 @@ import { hot } from "react-hot-loader/root";
 import styled from "styled-components";
 
 import { Button } from "../../components/button";
+import { Router } from "../router/";
 
 const Title = styled.h1`
   color: green;
@@ -11,6 +12,7 @@ const Title = styled.h1`
 export const App = hot(() => (
   <div>
     <Title>Hallo</Title>
-    <Button />
+    <Button black />
+    <Router />
   </div>
 ));

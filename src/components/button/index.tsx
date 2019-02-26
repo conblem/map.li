@@ -6,6 +6,6 @@ const ButtonStyles = styled.button`
   background: ${({ black }) => (black ? "white" : "black")};
 `;
 
-export const Button = ({ black }) => (
+export const Button = ({ black = false }) => (
   <ButtonStyles black={black}>Test</ButtonStyles>
 );
